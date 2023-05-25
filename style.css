@@ -17,6 +17,33 @@ navbar {
 
 .nav-item {
   margin-inline: 9px;
+  display: inline-block;
+}
+
+navbar > .nav-item > .cart {
+  color: #ffffff;
+  text-decoration: none;
+  background-image: url("./imgs/cart.svg");
+  width: 22px;
+  height: 22px;
+  padding-top: 100px;
+}
+
+.alert-area {
+  background-color: #b94a4d;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.alert-area > span {
+  /* margin-inline: 35px; */
+  display: block;
+  line-height: 24px;
+  height: 24px;
+  color: white;
+  margin: 10px 0 10px 0;
 }
 
 .hero {
@@ -26,12 +53,13 @@ navbar {
 .main-display {
   background-image: url("../imgs/hero2.webp");
   height: 669px;
+  width: 1903px;
 }
 
 .main-container {
   margin-inline: 350px;
   color: white;
-  padding: 100px 10px 100px 10px;
+  padding: 50px 10px 100px 10px;
 }
 
 .main-container > h1 {
