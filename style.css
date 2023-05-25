@@ -115,14 +115,84 @@ navbar > .nav-item > .cart {
   align-items: center;
   flex-direction: column;
   font-size: 16px;
+  text-align: center;
 }
 
 .wrapper p {
   margin-bottom: 10px;
   line-height: 1.5;
+  padding-inline: 55px;
+  flex: 1;
 }
 
 .sp-games {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.game-card {
+  display: flex;
+  flex: 1;
+}
+
+.game-card > img {
+  height: 95px;
+  margin-inline: 5px;
+}
+
+main > .wrapper > .choose-plan {
+  margin-top: -15px;
+}
+
+.host-plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.host-plan {
+  line-height: 25px;
+  background-color: #21252c;
+  text-align: left;
+  min-height: 100%px;
+  min-width: 240px;
+  max-width: 240px;
+  padding: 10px;
+  padding-top: 20px;
+  margin: 10px;
+  flex: 1;
+}
+
+.host-plan > .plan-name {
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.host-plan > .ram {
+  font-size: 58px;
+}
+
+.host-plan > .ram > span {
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+.host-plan > .price {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.host-plan > .per-month {
+  font-size: 16px;
+}
+
+.host-plan > .button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  margin-top: 10px;
 }
