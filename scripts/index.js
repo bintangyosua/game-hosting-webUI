@@ -69,7 +69,7 @@ plans.forEach((res) => {
 
   const ramDiv = document.createElement("div");
   ramDiv.classList.add("ram");
-  ramDiv.innerHTML = `${res.ram}<span>GB RAM</span>`;
+  ramDiv.innerHTML = `<strong>${res.ram}</strong><span>GB RAM</span>`;
 
   const descriptionSpan = document.createElement("span");
   descriptionSpan.classList.add("host-plan-desc");
@@ -81,7 +81,7 @@ plans.forEach((res) => {
 
   const recurringPriceSpan = document.createElement("span");
   recurringPriceSpan.classList.add("per-month");
-  recurringPriceSpan.textContent = `Recurring Price ${res.recururing_month}/mo billed monthly`;
+  recurringPriceSpan.textContent = `Recurring Price ${res.recurring_month}/mo billed monthly`;
 
   const orderButton = document.createElement("button");
   orderButton.classList.add("button");
