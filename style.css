@@ -23,7 +23,7 @@ navbar {
 navbar > .nav-item > .cart {
   color: #ffffff;
   text-decoration: none;
-  background-image: url("./imgs/cart.svg");
+  /* background-image: url("./imgs/cart.svg"); */
   width: 22px;
   height: 22px;
   padding-top: 100px;
@@ -51,7 +51,7 @@ navbar > .nav-item > .cart {
 }
 
 .main-display {
-  background-image: url("../imgs/hero2.webp");
+  background-image: url("hero2.webp");
   height: 669px;
   width: 1903px;
 }
