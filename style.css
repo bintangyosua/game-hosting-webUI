@@ -66,10 +66,13 @@ navbar > .nav-item > .cart {
   margin: 10px 0 10px 0;
 }
 
-.alert-area > .discount-code {
-  display: block;
-  border-style: dashed;
-  border-width: 3px;
+.alert-area > span > strong {
+  color: white;
+}
+
+.alert-area > span > .discount-code {
+  color: white;
+  font-weight: bold;
 }
 
 .hero {
