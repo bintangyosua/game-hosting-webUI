@@ -1,4 +1,5 @@
 const locations = [
+  "Portland, Oregon",
   "Los Angelas, California",
   "Dallas, Texas",
   "London, United Kingdom",
