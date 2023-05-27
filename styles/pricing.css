@@ -1,0 +1,30 @@
+* {
+  color: black;
+}
+
+body {
+  background-color: white;
+}
+
+.plans-table,
+.plans-table > tbody > tr > th,
+.plans-table > tbody > tr > td {
+  border: 1px rgba(0, 0, 0, 0.2) solid;
+  border-collapse: collapse;
+}
+
+.plans-table > tbody > tr > th {
+  padding: 9px;
+  font-size: 24px;
+}
+
+.plans-table > tbody > tr > td {
+  text-align: left;
+  line-height: 30px;
+  padding: 9px;
+  background-color: white;
+}
+
+.plans-table {
+  padding: 9px;
+}

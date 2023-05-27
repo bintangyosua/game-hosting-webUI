@@ -4,14 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <script
-      crossorigin
-      src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <title>Hosting Server Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/pricing.css" />
+    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <title>Pricing</title>
   </head>
   <body>
     <div class="secondary-menu">
@@ -56,84 +53,47 @@
         <span class="button btn-login nav-item">Login</span>
       </div>
     </navbar>
-    <div class="alert-area">
-      <span><strong>50% OFF</strong> For the first time</span>
-      <span>Check this code out: <span class="discount-code">CAVES</span></span>
+    <div class="wrapper">
+      <h1>Premium Servers, Affordable Pricing</h1>
+      <p>
+        Instantly deployed and easy to use minecraft server hosting and more. We
+        provide the performance you need. backed by industry leading support.
+        One server supports all available games.
+      </p>
+      <h2>Select Your Game</h2>
+      <div class="sp-games">
+        <div class="game-card"><img src="/imgs/Minecraft.webp" alt="" /></div>
+        <div class="game-card"><img src="/imgs/Terraria.webp" alt="" /></div>
+        <div class="game-card"><img src="/imgs/Ark.webp" alt="" /></div>
+        <div class="game-card"><img src="/imgs/Rust.webp" alt="" /></div>
+        <div class="game-card"><img src="/imgs/Valheim.webp" alt="" /></div>
+        <div class="game-card"><img src="/imgs/CSGO.webp" alt="" /></div>
+        <div class="game-card">
+          <img src="/imgs/The Forest.webp" alt="" />
+        </div>
+        <div class="game-card"><img src="/imgs/GTAV.jpg" alt="" /></div>
+        <div class="game-card"><img src="/imgs/L4D2.png" alt="" /></div>
+      </div>
+      <span>Switch games at any time on the control panel</span>
+      <h2>Plans Detail</h2>
+      <div class="plans-detail">
+        <table class="plans-table" id="plans-table">
+          <tbody id="plans-table-body">
+            <tr>
+              <th>Currency</th>
+              <th>Free</th>
+              <th>Basic</th>
+              <th>Starter</th>
+              <th>Advancer</th>
+              <th>Power</th>
+              <th>Ultimate</th>
+              <th>Master</th>
+              <th>Hell</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-    <div class="main-display">
-      <div class="main-container">
-        <h1>MINECRAFT SERVER<br />HOSTING</h1>
-        <ul>
-          <li>&nbsp&nbspJava & Bedrock Edition Servers</li>
-          <li>&nbsp&nbsp24/7 Chat and Ticket Support</li>
-          <li>&nbsp&nbspAll Mod & Plugin Support</li>
-          <li>&nbsp&nbsp200+ 1-Click-Modpack Installers</li>
-          <li>&nbsp&nbspPremium Hardware & Low Latency</li>
-          <li>&nbsp&nbspFull FTP & MYSQL Database Access</li>
-        </ul>
-        <div class="button get-started">Get Started</div>
-      </div>
-    </div>
-    <main>
-      <div class="wrapper">
-        <h1>Create Your Minecraft Server Easily</h1>
-        <p>
-          <strong
-            >We make it simple to create your Minecraft server by providing the
-            best minecraft server hosting for any version you would like to
-            start with industry leading customer service.</strong
-          >
-          We have hosted over 300,000 Minecraft servers and have the best
-          support in the industry. Our dedicated hardware features high clock
-          speed CPUs and SSD hard drives providing high TPS and lag free servers
-          for every one of our customers.
-        </p>
-        <h1>Supported Games</h1>
-        <div class="sp-games">
-          <div class="game-card"><img src="/imgs/Minecraft.webp" alt="" /></div>
-          <div class="game-card"><img src="/imgs/Terraria.webp" alt="" /></div>
-          <div class="game-card"><img src="/imgs/Ark.webp" alt="" /></div>
-          <div class="game-card"><img src="/imgs/Rust.webp" alt="" /></div>
-          <div class="game-card"><img src="/imgs/Valheim.webp" alt="" /></div>
-          <div class="game-card"><img src="/imgs/CSGO.webp" alt="" /></div>
-          <div class="game-card">
-            <img src="/imgs/The Forest.webp" alt="" />
-          </div>
-          <div class="game-card"><img src="/imgs/GTAV.jpg" alt="" /></div>
-          <div class="game-card"><img src="/imgs/L4D2.png" alt="" /></div>
-        </div>
-        <h1>Choose Your Plan</h1>
-        <p class="choose-plan">
-          <strong
-            >Each game has different memory requirements.<br />
-            Not sure what plan to choose? Check out our RAM calculator guide.
-            <br />You can contact us on LiveChat for any pre-sales questions or
-            plan recommendations as well!</strong
-          >
-        </p>
-        <div class="host-plans"></div>
-      </div>
-      <div class="cream">
-        <div class="latest-blogs">
-          <h1>Latest from the Blog</h1>
-          <span>News, Changelogs, and Game Hosting Discussions</span>
-          <div class="posts"></div>
-        </div>
-      </div>
-      <div class="test-server">
-        <div class="wrapper">
-          <h2>Test Our Server Locations</h2>
-          <p>
-            Our test servers around the world provide the lowest ping for your
-            players
-          </p>
-          <button class="button">Test Ping</button>
-          <div class="location-container">
-            <ul id="location-list"></ul>
-          </div>
-        </div>
-      </div>
-    </main>
     <footer>
       <div class="pre-footer">
         <div class="wrapper">
@@ -195,8 +155,6 @@
         </div>
       </div>
     </footer>
-    <script src="./scripts/host-plans.js"></script>
-    <script src="./scripts/short-blog.js"></script>
-    <script src="./scripts/location-list.js"></script>
+    <script src="./scripts/plans-table.js"></script>
   </body>
 </html>
