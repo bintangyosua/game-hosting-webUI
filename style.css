@@ -338,6 +338,7 @@ main > .wrapper > .choose-plan {
   border: none;
   height: 42px;
   font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .location-container {
