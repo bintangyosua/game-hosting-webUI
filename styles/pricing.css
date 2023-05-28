@@ -28,3 +28,16 @@ body {
 .plans-table {
   padding: 9px;
 }
+
+.all-packages-include {
+  display: flex;
+}
+
+.all-packages-include > ul > li {
+  height: 31px;
+  list-style-type: none;
+}
+
+.all-packages-include > ul > li > img {
+  height: 20px;
+}
