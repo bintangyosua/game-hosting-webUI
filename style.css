@@ -41,6 +41,11 @@ body {
   display: inline-block;
 }
 
+.top-mini-menu > span > a {
+  text-decoration: none;
+  color: white;
+}
+
 .nav-container {
   font-size: 17px;
   padding: 0 270px 0 270px;
