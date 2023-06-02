@@ -52,7 +52,7 @@ section > .dashboard-menu > div {
   border: #ebebeb solid 1px;
   align-items: center;
   font-weight: bold;
-  padding: 10px;
+  padding: 10px 10px 10px 15px;
   background-color: #f6f6f6;
 }
 

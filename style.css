@@ -78,7 +78,7 @@ body {
   color: white;
 }
 
-.nav-item:hover {
+.nav-item > a:hover {
   color: #bec2bf;
 }
 
@@ -164,6 +164,11 @@ navbar > .nav-item > .cart {
   color: white;
   font-weight: bold;
   border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #bec2bf;
 }
 
 .get-started {
