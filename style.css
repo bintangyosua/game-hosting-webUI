@@ -163,6 +163,7 @@ navbar > .nav-item > .cart {
   display: inline-block;
   color: white;
   font-weight: bold;
+  border: none;
 }
 
 .get-started {
