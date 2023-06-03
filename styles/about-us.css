@@ -1,0 +1,41 @@
+* {
+  color: #ffffff;
+  font-family: Helvetica;
+  /* background-color: #1e1e1e; */
+}
+
+body {
+  background-color: #1e1e1e;
+}
+
+navbar > h1 {
+  font-size: 26px;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 40px;
+  flex-grow: 1;
+  margin-bottom: 120px;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.content {
+  margin-top: 20px;
+  flex-grow: 1;
+  margin-bottom: 120px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+}

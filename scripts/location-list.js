@@ -18,7 +18,6 @@ const locations = [
 ];
 
 const listUL = document.getElementById("location-list");
-console.log(listUL);
 
 locations.forEach((res) => {
   const locationListLi = document.createElement("li");

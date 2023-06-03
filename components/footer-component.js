@@ -12,7 +12,7 @@ Vue.component("footer-component", {
             </ul>
             <h1>Our Company</h1>
             <ul class="footer-list">
-              <li>About Us</li>
+              <li><a href="./about-us.html">About Us</a></li>
               <li>Contact Us</li>
               <li>Affiliate Program</li>
               <li>Sponsorships</li>
