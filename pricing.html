@@ -6,171 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="./styles/pricing.css" />
-    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
     <title>Pricing</title>
   </head>
   <body>
-    <div class="secondary-menu">
+    <div id="app">
+      <secondary-menu-component></secondary-menu-component>
+      <navbar-component></navbar-component>
+      <discount-component></discount-component>
       <div class="wrapper">
-        <span>
-          <a href="" class="top-mini-menu">
-            <img src="./imgs/svg/setup.svg" alt="" />
-            <span>Status</span>
-          </a>
-          <a href="dashboard.html" class="top-mini-menu">
-            <img src="./imgs/svg/setting.svg" alt="" />
-            <span>Panel</span>
-          </a>
-        </span>
-      </div>
-    </div>
-    <navbar class="nav">
-      <div class="nav-container">
-        <h1>MINUET HOSTING</h1>
-        <div class="nav-items">
-          <span class="nav-item"><a href="index.html">Home</a></span>
-          <span class="nav-item"><a href="pricing.html">Pricing</a></span>
-          <span class="nav-item">Features</span>
-          <span class="nav-item">Reviews</span>
-          <span class="nav-item">FAQ</span>
-          <span class="nav-item">Blog</span>
-          <span class="nav-item">Support</span>
-          <span class="nav-item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="22"
-              height="22"
-              viewBox="0 0 32.402 32"
-              id="cart"
-              class="cart">
-              <path
-                d="M6 30a2 2 1080 1 0 4 0 2 2 1080 1 0-4 0zm18 0a2 2 1080 1 0 4 0 2 2 1080 1 0-4 0zM-.058 5a1 1 0 0 0 1 1H3.02l1.242 5.312L6 20c0 .072.034.134.042.204l-1.018 4.58A.997.997 0 0 0 6 26h22.688a1 1 0 0 0 0-2H7.248l.458-2.06c.1.016.19.06.294.06h18.23c1.104 0 1.77-.218 2.302-1.5l3.248-9.964C32.344 8.75 31.106 8 30 8H6c-.156 0-.292.054-.438.088l-.776-3.316A1 1 0 0 0 3.812 4H.942a1 1 0 0 0-1 1zm6.098 5h23.81l-3.192 9.798c-.038.086-.07.148-.094.19-.066.006-.17.012-.334.012H8v-.198l-.038-.194L6.04 10z"
-                style="fill: aliceblue"></path>
-            </svg>
-          </span>
-        </div>
-        <span class="button btn-login nav-item"
-          ><a href="login.html">Login</a></span
-        >
-      </div>
-    </navbar>
-    <div class="alert-area">
-      <span><strong>50% OFF</strong> For the first time</span>
-      <span>Check this code out: <span class="discount-code">CAVES</span></span>
-    </div>
-    <div class="wrapper">
-      <h1>Premium Servers, Affordable Pricing</h1>
-      <p>
-        Instantly deployed and easy to use minecraft server hosting and more. We
-        provide the performance you need. backed by industry leading support.
-        One server supports all available games.
-      </p>
-      <h2>Select Your Game</h2>
-      <div class="sp-games">
-        <div class="game-card"><img src="./imgs/Minecraft.webp" alt="" /></div>
-        <div class="game-card"><img src="./imgs/Terraria.webp" alt="" /></div>
-        <div class="game-card"><img src="./imgs/Ark.webp" alt="" /></div>
-        <div class="game-card"><img src="./imgs/Rust.webp" alt="" /></div>
-        <div class="game-card"><img src="./imgs/Valheim.webp" alt="" /></div>
-        <div class="game-card"><img src="./imgs/CSGO.webp" alt="" /></div>
-        <div class="game-card">
-          <img src="./imgs/The Forest.webp" alt="" />
-        </div>
-        <div class="game-card"><img src="./imgs/GTAV.jpg" alt="" /></div>
-        <div class="game-card"><img src="./imgs/L4D2.png" alt="" /></div>
-      </div>
-      <div class="host-plans"></div>
-      <span>Switch games at any time on the control panel</span>
-      <h2>Plans Detail</h2>
-      <div class="plans-detail">
-        <table class="plans-table" id="plans-table">
-          <tbody id="plans-table-body">
-            <tr>
-              <th>Currency</th>
-              <th>Free</th>
-              <th>Basic</th>
-              <th>Starter</th>
-              <th>Advancer</th>
-              <th>Power</th>
-              <th>Ultimate</th>
-              <th>Master</th>
-              <th>Hell</th>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="cream">
-      <div class="latest-blogs">
-        <h1>Latest from the Blog</h1>
-        <span>News, Changelogs, and Game Hosting Discussions</span>
-        <div class="posts"></div>
-      </div>
-    </div>
-    <footer>
-      <div class="pre-footer">
-        <div class="wrapper">
-          <div>
-            <h1>Products</h1>
-            <ul class="footer-list">
-              <li>Game Server Hosting</li>
-              <li>Modpack List</li>
-              <li>Server List</li>
-              <li>Enterprise Console</li>
-            </ul>
-            <h1>Our Company</h1>
-            <ul class="footer-list">
-              <li>About Us</li>
-              <li>Contact Us</li>
-              <li>Affiliate Program</li>
-              <li>Sponsorships</li>
-              <li>Jobs</li>
-            </ul>
-          </div>
-          <div>
-            <h1>Top Game Server</h1>
-            <ul class="footer-list">
-              <li>Minecraft Hosting</li>
-              <li>Ark Hosting</li>
-              <li>Rust Hosting</li>
-              <li>Valheim Hosting</li>
-              <li>CS:GO Hosting</li>
-              <li>Terraria Hosting</li>
-              <li>Left 4 Dead</li>
-              <li>Grand Theft Auto V</li>
-              <li>The Forest</li>
-              <li>All Games ></li>
-            </ul>
-          </div>
-          <div>
-            <h1>Customer Areas</h1>
-            <ul class="footer-list">
-              <li>Billing Panel</li>
-              <li>Game Panel</li>
-              <li>Knowledgebase</li>
-            </ul>
-            <h1>Resources</h1>
-            <ul class="footer-list">
-              <li>Server Status</li>
-              <li>Submit a Ticket</li>
-              <li>Education</li>
-              <li>Scholarship</li>
-              <li>Giveaway</li>
-              <li>Public Server</li>
-            </ul>
-          </div>
-          <div>
-            <p>
-              Our mission is to be the leader in game server hosting through
-              dedication to customer support and education.
-            </p>
-          </div>
+        <h1>Premium Servers, Affordable Pricing</h1>
+        <p>
+          Instantly deployed and easy to use minecraft server hosting and more.
+          We provide the performance you need. backed by industry leading
+          support. One server supports all available games.
+        </p>
+        <h2>Select Your Game</h2>
+        <game-list-component></game-list-component>
+        <div class="host-plans"></div>
+        <span>Switch games at any time on the control panel</span>
+        <h2>Plans Detail</h2>
+        <div class="plans-detail">
+          <table class="plans-table" id="plans-table">
+            <tbody id="plans-table-body">
+              <tr>
+                <th>Currency</th>
+                <th>Free</th>
+                <th>Basic</th>
+                <th>Starter</th>
+                <th>Advancer</th>
+                <th>Power</th>
+                <th>Ultimate</th>
+                <th>Master</th>
+                <th>Hell</th>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-    </footer>
+      <div class="cream">
+        <div class="latest-blogs">
+          <h1>Latest from the Blog</h1>
+          <span>News, Changelogs, and Game Hosting Discussions</span>
+          <div class="posts"></div>
+        </div>
+      </div>
+      <footer-component></footer-component>
+    </div>
     <script src="./scripts/host-plans.js"></script>
     <script src="./scripts/plans-table.js"></script>
     <script src="./scripts/short-blog.js"></script>
+    <script src="./components/secondary-menu-component.js"></script>
+    <script src="./components/navbar-component.js"></script>
+    <script src="./components/discount-component.js"></script>
+    <script src="./components/game-list-component.js"></script>
+    <script src="./components/footer-component.js"></script>
   </body>
 </html>

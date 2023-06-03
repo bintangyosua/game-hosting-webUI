@@ -5,202 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <script
-      crossorigin
-      src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
     <title>Hosting Server Game</title>
   </head>
   <body>
-    <div class="secondary-menu">
-      <div class="wrapper">
-        <span>
-          <a href="" class="top-mini-menu">
-            <img src="./imgs/svg/setup.svg" alt="" />
-            <span>Status</span>
-          </a>
-          <a href="dashboard.html" class="top-mini-menu">
-            <img src="./imgs/svg/setting.svg" alt="" />
-            <span>Panel</span>
-          </a>
-        </span>
-      </div>
-    </div>
-    <navbar class="nav">
-      <div class="nav-container">
-        <h1>MINUET HOSTING</h1>
-        <div class="nav-items">
-          <span class="nav-item"><a href="index.html">Home</a></span>
-          <span class="nav-item"><a href="pricing.html">Pricing</a></span>
-          <span class="nav-item">Features</span>
-          <span class="nav-item">Reviews</span>
-          <span class="nav-item">FAQ</span>
-          <span class="nav-item">Blog</span>
-          <span class="nav-item">Support</span>
-          <span class="nav-item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="22"
-              height="22"
-              viewBox="0 0 32.402 32"
-              id="cart"
-              class="cart">
-              <path
-                d="M6 30a2 2 1080 1 0 4 0 2 2 1080 1 0-4 0zm18 0a2 2 1080 1 0 4 0 2 2 1080 1 0-4 0zM-.058 5a1 1 0 0 0 1 1H3.02l1.242 5.312L6 20c0 .072.034.134.042.204l-1.018 4.58A.997.997 0 0 0 6 26h22.688a1 1 0 0 0 0-2H7.248l.458-2.06c.1.016.19.06.294.06h18.23c1.104 0 1.77-.218 2.302-1.5l3.248-9.964C32.344 8.75 31.106 8 30 8H6c-.156 0-.292.054-.438.088l-.776-3.316A1 1 0 0 0 3.812 4H.942a1 1 0 0 0-1 1zm6.098 5h23.81l-3.192 9.798c-.038.086-.07.148-.094.19-.066.006-.17.012-.334.012H8v-.198l-.038-.194L6.04 10z"
-                style="fill: aliceblue"></path>
-            </svg>
-          </span>
-        </div>
-        <span class="button btn-login nav-item"
-          ><a href="login.html">Login</a></span
-        >
-      </div>
-    </navbar>
-    <div class="alert-area">
-      <span><strong>50% OFF</strong> For the first time</span>
-      <span>Check this code out: <span class="discount-code">CAVES</span></span>
-    </div>
-    <div class="main-display">
-      <div class="main-container">
-        <h1>MINECRAFT SERVER<br />HOSTING</h1>
-        <ul>
-          <li>&nbsp&nbspJava & Bedrock Edition Servers</li>
-          <li>&nbsp&nbsp24/7 Chat and Ticket Support</li>
-          <li>&nbsp&nbspAll Mod & Plugin Support</li>
-          <li>&nbsp&nbsp200+ 1-Click-Modpack Installers</li>
-          <li>&nbsp&nbspPremium Hardware & Low Latency</li>
-          <li>&nbsp&nbspFull FTP & MYSQL Database Access</li>
-        </ul>
-        <div class="button get-started">Get Started</div>
-      </div>
-    </div>
-    <main>
-      <div class="wrapper">
-        <h1>Create Your Minecraft Server Easily</h1>
-        <p>
-          <strong
-            >We make it simple to create your Minecraft server by providing the
-            best minecraft server hosting for any version you would like to
-            start with industry leading customer service.</strong
-          >
-          We have hosted over 300,000 Minecraft servers and have the best
-          support in the industry. Our dedicated hardware features high clock
-          speed CPUs and SSD hard drives providing high TPS and lag free servers
-          for every one of our customers.
-        </p>
-        <h1>Supported Games</h1>
-        <div class="sp-games">
-          <div class="game-card">
-            <img src="./imgs/Minecraft.webp" alt="" />
-          </div>
-          <div class="game-card"><img src="./imgs/Terraria.webp" alt="" /></div>
-          <div class="game-card"><img src="./imgs/Ark.webp" alt="" /></div>
-          <div class="game-card"><img src="./imgs/Rust.webp" alt="" /></div>
-          <div class="game-card"><img src="./imgs/Valheim.webp" alt="" /></div>
-          <div class="game-card"><img src="./imgs/CSGO.webp" alt="" /></div>
-          <div class="game-card">
-            <img src="./imgs/The Forest.webp" alt="" />
-          </div>
-          <div class="game-card"><img src="./imgs/GTAV.jpg" alt="" /></div>
-          <div class="game-card"><img src="./imgs/L4D2.png" alt="" /></div>
-        </div>
-        <h1>Choose Your Plan</h1>
-        <p class="choose-plan">
-          <strong
-            >Each game has different memory requirements.<br />
-            Not sure what plan to choose? Check out our RAM calculator guide.
-            <br />You can contact us on LiveChat for any pre-sales questions or
-            plan recommendations as well!</strong
-          >
-        </p>
-        <div class="host-plans"></div>
-      </div>
-      <div class="cream">
-        <div class="latest-blogs">
-          <h1>Latest from the Blog</h1>
-          <span>News, Changelogs, and Game Hosting Discussions</span>
-          <div class="posts"></div>
+    <div id="app">
+      <secondary-menu-component></secondary-menu-component>
+      <navbar-component></navbar-component>
+      <discount-component></discount-component>
+      <div class="main-display">
+        <div class="main-container">
+          <h1>MINECRAFT SERVER<br />HOSTING</h1>
+          <ul>
+            <li>&nbsp&nbspJava & Bedrock Edition Servers</li>
+            <li>&nbsp&nbsp24/7 Chat and Ticket Support</li>
+            <li>&nbsp&nbspAll Mod & Plugin Support</li>
+            <li>&nbsp&nbsp200+ 1-Click-Modpack Installers</li>
+            <li>&nbsp&nbspPremium Hardware & Low Latency</li>
+            <li>&nbsp&nbspFull FTP & MYSQL Database Access</li>
+          </ul>
+          <div class="button get-started">Get Started</div>
         </div>
       </div>
-      <div class="test-server">
+      <main>
         <div class="wrapper">
-          <h2>Test Our Server Locations</h2>
+          <h1>Create Your Minecraft Server Easily</h1>
           <p>
-            Our test servers around the world provide the lowest ping for your
-            players
+            <strong
+              >We make it simple to create your Minecraft server by providing
+              the best minecraft server hosting for any version you would like
+              to start with industry leading customer service.</strong
+            >
+            We have hosted over 300,000 Minecraft servers and have the best
+            support in the industry. Our dedicated hardware features high clock
+            speed CPUs and SSD hard drives providing high TPS and lag free
+            servers for every one of our customers.
           </p>
-          <button class="button">Test Ping</button>
-          <div class="location-container">
-            <ul id="location-list"></ul>
+          <h1>Supported Games</h1>
+          <game-list-component></game-list-component>
+          <h1>Choose Your Plan</h1>
+          <p class="choose-plan">
+            <strong
+              >Each game has different memory requirements.<br />
+              Not sure what plan to choose? Check out our RAM calculator guide.
+              <br />You can contact us on LiveChat for any pre-sales questions
+              or plan recommendations as well!</strong
+            >
+          </p>
+          <div class="host-plans"></div>
+        </div>
+        <div class="cream">
+          <div class="latest-blogs">
+            <h1>Latest from the Blog</h1>
+            <span>News, Changelogs, and Game Hosting Discussions</span>
+            <div class="posts"></div>
           </div>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div class="pre-footer">
-        <div class="wrapper">
-          <div>
-            <h1>Products</h1>
-            <ul class="footer-list">
-              <li>Game Server Hosting</li>
-              <li>Modpack List</li>
-              <li>Server List</li>
-              <li>Enterprise Console</li>
-            </ul>
-            <h1>Our Company</h1>
-            <ul class="footer-list">
-              <li>About Us</li>
-              <li>Contact Us</li>
-              <li>Affiliate Program</li>
-              <li>Sponsorships</li>
-              <li>Jobs</li>
-            </ul>
-          </div>
-          <div>
-            <h1>Top Game Server</h1>
-            <ul class="footer-list">
-              <li>Minecraft Hosting</li>
-              <li>Ark Hosting</li>
-              <li>Rust Hosting</li>
-              <li>Valheim Hosting</li>
-              <li>CS:GO Hosting</li>
-              <li>Terraria Hosting</li>
-              <li>Left 4 Dead</li>
-              <li>Grand Theft Auto V</li>
-              <li>The Forest</li>
-              <li>All Games ></li>
-            </ul>
-          </div>
-          <div>
-            <h1>Customer Areas</h1>
-            <ul class="footer-list">
-              <li>Billing Panel</li>
-              <li>Game Panel</li>
-              <li>Knowledgebase</li>
-            </ul>
-            <h1>Resources</h1>
-            <ul class="footer-list">
-              <li>Server Status</li>
-              <li>Submit a Ticket</li>
-              <li>Education</li>
-              <li>Scholarship</li>
-              <li>Giveaway</li>
-              <li>Public Server</li>
-            </ul>
-          </div>
-          <div>
+        <div class="test-server">
+          <div class="wrapper">
+            <h2>Test Our Server Locations</h2>
             <p>
-              Our mission is to be the leader in game server hosting through
-              dedication to customer support and education.
+              Our test servers around the world provide the lowest ping for your
+              players
             </p>
+            <button class="button">Test Ping</button>
+            <div class="location-container">
+              <ul id="location-list"></ul>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </main>
+      <footer-component></footer-component>
+    </div>
     <script src="./scripts/host-plans.js"></script>
     <script src="./scripts/short-blog.js"></script>
     <script src="./scripts/location-list.js"></script>
+    <script src="./components/navbar-component.js"></script>
+    <script src="./components/secondary-menu-component.js"></script>
+    <script src="./components/discount-component.js"></script>
+    <script src="./components/game-list-component.js"></script>
+    <script src="./components/footer-component.js"></script>
   </body>
 </html>
