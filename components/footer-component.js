@@ -14,9 +14,9 @@ Vue.component("footer-component", {
             <ul class="footer-list">
               <li><a href="./about-us.html">About Us</a></li>
               <li><a href="./contact-us.html">Contact Us</a></li>
+              <li><a href="./privacy-policy.html">Privacy Policy</a></li>
               <li>Affiliate Program</li>
               <li>Sponsorships</li>
-              <li>Jobs</li>
             </ul>
           </div>
           <div>
