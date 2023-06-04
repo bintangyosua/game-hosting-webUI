@@ -419,6 +419,7 @@ main > .wrapper > .choose-plan {
   color: #c0c0c0;
   font-size: 12px;
   text-align: left;
+  padding-inline: 0;
 }
 
 .footer-list {

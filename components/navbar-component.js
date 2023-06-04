@@ -10,7 +10,7 @@ Vue.component("navbar-component", {
           <span class="nav-item">Reviews</span>
           <span class="nav-item">FAQ</span>
           <span class="nav-item">Blog</span>
-          <span class="nav-item">Support</span>
+          <span class="nav-item"><a href="help.html">Help</a></span>
           <span class="nav-item">
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -1,0 +1,41 @@
+#id {
+  background-color: #21252c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: left;
+}
+
+main {
+  background-color: #1b1b1b;
+}
+
+.supports {
+  border: #2a2a2a solid 1px;
+  width: 100%;
+}
+.supports > h2 {
+  padding: 20px;
+}
+
+.supports-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 50px;
+  background-color: #2a2a2a;
+}
+.each-supports {
+  margin-right: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.each-supports > ul {
+  margin-top: 10px;
+  line-height: 1.5;
+}

@@ -52,6 +52,12 @@ Vue.component("footer-component", {
             </ul>
           </div>
           <div>
+            <span>
+               &copy 2018 - 2023 Minuet Limited.
+            </span>
+            <p>
+              We are not affiliated with any brand which is shown in the site.
+            </p>
             <p>
               Our mission is to be the leader in game server hosting through
               dedication to customer support and education.
