@@ -1,0 +1,69 @@
+* {
+  color: #000000;
+}
+
+/* Isi */
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 20px 20px 20px;
+  text-align: left;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.container > p {
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 10px;
+  line-height: 1.2;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container textarea {
+  color: black;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 97%;
+  max-width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: Helvetica;
+  font-size: 18px;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}

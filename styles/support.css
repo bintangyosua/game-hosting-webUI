@@ -28,9 +28,10 @@ main {
   justify-content: space-between;
   padding-left: 50px;
   background-color: #2a2a2a;
+  flex-wrap: wrap;
 }
 .each-supports {
-  margin-right: 100px;
+  width: 33%;
   margin-top: 20px;
   margin-bottom: 20px;
 }

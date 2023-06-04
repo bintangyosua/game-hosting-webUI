@@ -420,11 +420,12 @@ main > .wrapper > .choose-plan {
   font-size: 12px;
   text-align: left;
   padding-inline: 0;
+  margin-top: 10px;
 }
 
 .footer-list {
   list-style-type: none;
-  padding: 0;
+  padding: 10px 0 20px 0;
 }
 
 .footer-list > li {

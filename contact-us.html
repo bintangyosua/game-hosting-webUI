@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/contact-us.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <div id="app">
+      <secondary-menu-component></secondary-menu-component>
+      <navbar-component></navbar-component>
+      <discount-component></discount-component>
+      <div class="container">
+        <h1>Contact Us</h1>
+        <span style="font-weight: bold">
+          Customer Service Hours: 24 hours a day, 365 days a year.
+        </span>
+        <p>
+          For content creators seeking partnerships please email
+          marketing@apexminecrafthosting.com For all other inquiries please use
+          the form below:
+        </p>
+        <form>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email"
+              required />
+          </div>
+          <div class="form-group">
+            <label for="text">Subject:</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Your subject"
+              required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your message"
+              required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="button">Submit</button>
+          </div>
+        </form>
+        <hr style="width: 100%" />
+        <h2>Address</h2>
+        <p>
+          Minuet Hosting, LLC is a registered corporation located in Purwokerto,
+          Banyumas, Indonesia.
+        </p>
+        <p>
+          Minuet Hosting, LLC <br />
+          Jalan Munchkin <br />
+          No. 345 <br />
+        </p>
+      </div>
+      <footer-component></footer-component>
+    </div>
+    <script src="./components/navbar-component.js"></script>
+    <script src="./components/secondary-menu-component.js"></script>
+    <script src="./components/discount-component.js"></script>
+    <script src="./components/footer-component.js"></script>
+  </body>
+</html>
