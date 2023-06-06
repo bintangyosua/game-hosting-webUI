@@ -9,7 +9,7 @@ Vue.component("navbar-component", {
           <span class="nav-item">Features</span>
           <span class="nav-item">Reviews</span>
           <span class="nav-item">FAQ</span>
-          <span class="nav-item">Blog</span>
+          <span class="nav-item"><a href="blogs.html">Blog</a></span>
           <span class="nav-item"><a href="help.html">Help</a></span>
           <span class="nav-item">
             <svg

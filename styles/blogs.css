@@ -1,0 +1,58 @@
+.wrapper > .content {
+  width: 75%;
+  height: 100%;
+  margin-top: -20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.wrapper > .content > h1 {
+  text-align: start;
+  font-size: 42px;
+  font-weight: 700px;
+  margin: 20px 0 5px 0;
+}
+
+.wrapper > .content > .article {
+  text-align: left;
+  align-items: baseline;
+}
+
+.wrapper > .content > .article > h1 {
+  font-size: 32px;
+}
+
+.wrapper > .content > .article > img {
+  width: 100%;
+  display: flex;
+  align-items: start;
+}
+
+.wrapper > .content > .article > p {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0;
+  text-align: left;
+  align-items: baseline;
+}
+
+.wrapper > .content > .article > .article-text > span {
+  color: blue;
+}
+
+.wrapper > .content > .page-number {
+  color: blue;
+}
+
+.blog-category {
+  border: none;
+  padding: 7.5px;
+}
+
+.article-text > button {
+  padding: 10px 20px 10px 20px;
+  margin: 15px 0 15px 0;
+  font-weight: 700;
+  font-size: 16px;
+}

@@ -5,10 +5,9 @@
 }
 
 body {
-    background-image: url("../imgs/login-background.jpg") no-repeat fixed;
-    background-position-x: 20%;
-    background-position-y: 10% ;
-    background-size: 150% 150%;
+    background-image: url("../imgs/login-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .wrapper {
