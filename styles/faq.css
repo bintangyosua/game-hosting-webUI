@@ -1,0 +1,77 @@
+* {
+  color: #ffffff;
+}
+
+/*BAGIANKU*/
+/*BAGIANKU*/
+/*BAGIANKU*/
+/*BAGIANKU*/
+/*BAGIANKU*/
+/*BAGIANKU*/
+/*BAGIANKU*/
+/*BAGIANKU*/
+/*BAGIANKU*/
+/*BAGIANKU*/
+/*BAGIANKU*/
+/*BAGIANKU*/
+/*BAGIANKU*/
+/*BAGIANKU*/
+/*BAGIANKU*/
+
+.wrapper > .content {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+
+  margin-top: -20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.wrapper > .content > .article > header {
+  text-align: left;
+  align-items: baseline;
+}
+
+.wrapper > .content > .article > img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper > .content > .article > .article-text {
+  padding-top: 15px;
+  text-align: left;
+  align-items: baseline;
+}
+
+.wrapper > .content > .article > .article-text > span {
+  color: blue;
+}
+
+.wrapper > .content > .page-number {
+  color: blue;
+}
+
+.title > h1 {
+  color: black;
+}
+
+.question {
+  display: block;
+  color: black;
+  text-align: left;
+}
+
+.question > ul > li {
+  color: black;
+}
+
+.question > ul > li > h3 {
+  color: black;
+}
+
+.question > ul > li > p {
+  color: black;
+  font-size: 16px;
+}
